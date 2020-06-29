@@ -368,7 +368,7 @@ const main = async () => {
       fileData += await printMarkdownTable(base, td);
     }
   });
-  fs.writeFile("testFile.txt", fileData, () => {
+  fs.writeFile("output.md", fileData, () => {
     console.log("file written");
   });
 };
